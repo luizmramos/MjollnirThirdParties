@@ -1,0 +1,7 @@
+/lib
+/include
+*~
+*.o
+*.a
+*.pyc
+CMakeCache.txt

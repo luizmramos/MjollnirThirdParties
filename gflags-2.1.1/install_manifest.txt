@@ -1,0 +1,10 @@
+/usr/local/lib/libgflags.a
+/usr/local/lib/libgflags_nothreads.a
+/usr/local/include/gflags/gflags.h
+/usr/local/include/gflags/gflags_declare.h
+/usr/local/include/gflags/gflags_completions.h
+/usr/local/lib/cmake/gflags/gflags-config.cmake
+/usr/local/lib/cmake/gflags/gflags-config-version.cmake
+/usr/local/lib/cmake/gflags/gflags-export.cmake
+/usr/local/lib/cmake/gflags/gflags-export-release.cmake
+/usr/local/bin/gflags_completions.sh
