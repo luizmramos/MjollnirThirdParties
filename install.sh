@@ -8,7 +8,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 echo "==== Dependencies ===="
-apt-get install gcc g++ make cmake automake autoconf bison flex libevent-dev libboost1.48-dev libboost-dev libssl-dev mono-devel mono-gmcs pkg-config qt4-dev-tools zlibc zlib1g zlib1g-dev
+apt-get install gcc g++ make cmake automake autoconf bison flex libevent-dev libboost1.48-dev libssl-dev mono-devel mono-gmcs pkg-config qt4-dev-tools zlibc zlib1g zlib1g-dev
 
 echo "==== Cleaning ===="
 rm -rf include
