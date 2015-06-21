@@ -47,7 +47,8 @@ echo "==== thrift ===="
 cd thrift-0.9.1
 cp -f /usr/share/aclocal/pkg.m4 aclocal
 autoconf
-automake || echo ">>>> automake maybe failed"
+touch NEWS README AUTHORS ChangeLog
+automake --add-missing
 ./configure
 make
 make install
