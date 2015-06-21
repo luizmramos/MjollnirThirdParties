@@ -1,2 +1,0 @@
-/home/filipe/mjollnir/MjollnirThirdParties/gtest-1.7.0/CMakeFiles/gtest.dir
-/home/filipe/mjollnir/MjollnirThirdParties/gtest-1.7.0/CMakeFiles/gtest_main.dir

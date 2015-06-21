@@ -8,17 +8,18 @@
 *.pyc
 *.log
 *.status
+*.cmake
 *.dll
 CMakeCache.txt
 Makefile
 Makefile.in
 pkg.m4
+libtool
 gen-*
 .libs
 autom4te.cache/
 thrift-0.9.1/compiler/cpp/thrift*
 thrift-0.9.1/compiler/cpp/version.h
-thrift-0.9.1/libtool
 thrift-0.9.1/lib/py/build
 thrift-0.9.1/lib/cpp/test/Benchmark
 thrift-0.9.1/lib/cpp/src/thrift/qt/moc_TQTcpServer.cpp
@@ -28,4 +29,3 @@ thrift-0.9.1/COPYING
 thrift-0.9.1/ChangeLog
 thrift-0.9.1/INSTALL
 thrift-0.9.1/NEWS
-*.cmake

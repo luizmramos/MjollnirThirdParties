@@ -34,7 +34,9 @@ cd ..
 echo "==== gtest ===="
 cd gtest-1.7.0
 rm -f CMakeCache.txt
-cmake .
+#cmake .
+autoconf
+automake
 ./configure
 make
 cp -r include/* ../include
