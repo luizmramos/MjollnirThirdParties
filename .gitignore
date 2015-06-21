@@ -28,3 +28,4 @@ thrift-0.9.1/COPYING
 thrift-0.9.1/ChangeLog
 thrift-0.9.1/INSTALL
 thrift-0.9.1/NEWS
+*.cmake

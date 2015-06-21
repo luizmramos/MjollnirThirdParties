@@ -26,7 +26,6 @@ echo "==== gflags ===="
 cd gflags-2.1.1
 rm -f CMakeCache.txt
 cmake .
-./configure || echo "No configure"
 make
 cp -r include/* ../include
 cp lib/* ../lib
