@@ -20,6 +20,7 @@ gen-*
 autom4te.cache/
 thrift-0.9.1/compiler/cpp/thrift*
 thrift-0.9.1/compiler/cpp/version.h
+thrift-0.9.1/lib/java/build
 thrift-0.9.1/lib/py/build
 thrift-0.9.1/lib/cpp/test/Benchmark
 thrift-0.9.1/lib/cpp/src/thrift/qt/moc_TQTcpServer.cpp

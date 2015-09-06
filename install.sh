@@ -8,13 +8,14 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 echo "==== Dependencies ===="
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-sudo apt-get update
-sudo apt-get install gcc-4.7 g++-4.7
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.7
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.6
+add-apt-repository ppa:ubuntu-toolchain-r/test
+apt-get update
+apt-get install gcc-4.7 g++-4.7
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.7
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.6
 
 apt-get install make cmake automake autoconf bison flex libevent-dev libboost1.48-dev libssl-dev mono-devel mono-gmcs pkg-config qt4-dev-tools zlibc zlib1g zlib1g-dev
+apt-get install openjdk-7-jdk ant
 
 echo "==== Cleaning ===="
 rm -rf include
@@ -53,8 +54,13 @@ automake --add-missing
 ./configure
 make
 make install
+cd lib/java
+ant
+cd ../..
 cp -r lib/py/build/lib.linux-x86_64-2.7/thrift ../lib/
 cp lib/csharp/Thrift.dll ../lib/
+cp lib/java/build/*.jar ../lib/
+cp lib/java/build/lib/* ../lib/
 cd ..
 cp /usr/local/lib/libthrift.a lib/
 cp -r /usr/local/include/thrift include/
