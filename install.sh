@@ -11,8 +11,8 @@ echo "==== Dependencies ===="
 add-apt-repository ppa:ubuntu-toolchain-r/test
 apt-get update
 apt-get -y install gcc-4.7 g++-4.7
-update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.7
-update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.6
+[ -x /usr/bin/gcc-4.6 ] && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.7
+[ -x /usr/bin/gcc-4.6 ] && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.6
 
 apt-get -y install make cmake automake autoconf bison flex libevent-dev libboost1.48-dev libssl-dev mono-devel mono-gmcs openjdk-7-jdk pkg-config qt4-dev-tools zlibc zlib1g zlib1g-dev
 
